@@ -230,6 +230,7 @@ img {
 .hero-button {
   padding: 16px 32px;
   border-radius: 4px;
+  border: none;
   background-color: var(--primary-brand-color);
   color: var(--primary-bck-color);
   font-family: var(--primary-font);
@@ -415,7 +416,11 @@ img {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.cards-item:hover {
+.cards-link {
+  display: block;
+}
+
+.cards-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
