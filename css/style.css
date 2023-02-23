@@ -172,6 +172,10 @@ img {
   gap: 40px;
 }
 
+.header-item {
+  position: relative;
+}
+
 .header-link {
   display: block;
   padding: 24px 0;
@@ -183,6 +187,17 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--pressed-state-color);
+}
+
+.header-current::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--pressed-state-color);
+  border-radius: 2px;
+  bottom: 0;
 }
 
 .adress-link {
